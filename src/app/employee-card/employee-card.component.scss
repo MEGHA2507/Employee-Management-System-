@@ -1,0 +1,22 @@
+.employee-card-container {
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    border: 0.5px solid grey;
+    border-radius: 15px;
+
+    .card-top-actions {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .details-conatiner {
+        display: flex;
+        flex-direction: row;
+
+        .personal-details {
+            margin-right: 30px;
+        }
+    }
+}
