@@ -1,0 +1,29 @@
+.dashboard-container {
+    .dashboard-action-conatiner {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+
+
+
+        .add-employee-btn {
+            color: brown;
+            text-transform: uppercase;
+            font-weight: 600;
+            background: lightgoldenrodyellow;
+        }
+
+        .search-employee-panel {
+            width: 550px;
+
+            .input-search {
+                padding: 15px 20px;
+                font-size: 14px;
+                line-height: 18px;
+                width: 90%;
+                border-radius: 10px;
+                border: 1px solid lightgray;
+            }
+        }
+    }
+}

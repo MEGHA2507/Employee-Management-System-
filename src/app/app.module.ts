@@ -9,6 +9,12 @@ import { EmployeeListPageComponent } from './employee-list-page/employee-list-pa
 import { HeaderComponent } from './header/header.component';
 import { EmployeeDetailsPageComponent } from './employee-details-page/employee-details-page.component';
 import { EmployeeCardComponent } from './employee-card/employee-card.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+
+import {MatButtonModule} from '@angular/material/button';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,10 +27,18 @@ import { EmployeeCardComponent } from './employee-card/employee-card.component';
     EmployeeCardComponent
   ],
   imports: [
+    MatButtonModule,
+    MatFormFieldModule,
+    MatIconModule,
+    
+    FormsModule,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+   providers: [
+   
+  ],
+  bootstrap: [AppComponent, ]
 })
 export class AppModule { }

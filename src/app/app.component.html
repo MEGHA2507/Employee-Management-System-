@@ -1,5 +1,20 @@
-<p>{{title}}</p>
-<app-header></app-header>
+<div class="dashboard-container">
+    <app-header></app-header>
+    <div class="dashboard-action-conatiner">
+        <button class="add-employee-btn" mat-raised-button color="accent" (click)="addEmployee()">
+            Add Employee
+        </button>
+    
+        <mat-form-field class="example-full-width search-employee-panel">
+    
+            <input type="tel" matInput placeholder="Search" name="search" [(ngModel)]="search" class="input-search">
+    
+        </mat-form-field>
+    
+    </div>
+    <app-employee-list-page></app-employee-list-page>
+    </div>
+
 <app-employee-list-page></app-employee-list-page>
 <app-employee-details-page></app-employee-details-page>
 <app-login-page></app-login-page>
