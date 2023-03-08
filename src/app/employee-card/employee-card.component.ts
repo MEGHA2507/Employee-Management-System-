@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class EmployeeCardComponent {
 
+  editEmployee(){
+    console.log('edit employee clicked');
+  }
+
+  deleteEmployee(){
+    console.log('delete employee clicked');
+  }
 }

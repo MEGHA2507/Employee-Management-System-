@@ -1,42 +1,48 @@
 <div class="employee-card-container">
     <div class="profile-photo">
-        <img src="" alt="employee-profile-photo">
+        <img src="../../assets/images/megha.jpeg" alt="employee-profile-photo" class="profile-photo-img">
     </div>
     <div class="employee-details">
         <div class="card-top-actions">
             <span class="employee-name">Megha Banerjee</span>
             <div class="edit-add-action-btn-container">
-                <button class="edit-btn">Edit</button>
-                <button class="add-btn">Add</button>
+                <button class="edit-btn" (click)="editEmployee()">
+                    <mat-icon aria-hidden="false" aria-label="Example edit icon" fontIcon="create">create</mat-icon>
+                </button>
+                <button class="add-btn" (click)="deleteEmployee()"> <mat-icon aria-hidden="false" aria-label="Example delete icon"
+                        fontIcon="delete">delete</mat-icon></button>
             </div>
         </div>
         <div class="details-conatiner">
+        
             <div class="personal-details">
+                <p class="details-heading">Personal Details</p>
                 <div class="birthday pd">
-                    <span>Birthday</span>
-                    <span>1997-05-25</span>
+                    <span class="pd-h">Birthday</span>
+                    <span class="pd-d">1997-05-25</span>
                 </div>
                 <div class="gender pd">
-                    <span>Gender</span>
-                    <span>Female</span>
+                    <span class="pd-h">Gender</span>
+                    <span class="pd-d">Female</span>
                 </div>
                 <div class="education pd">
-                    <span>Education</span>
-                    <span>Bachelor's</span>
+                    <span class="pd-h">Education</span>
+                    <span class="pd-d">Bachelor's</span>
                 </div>
             </div>
             <div class="job-details">
+                <p class="details-heading">Job Details</p>
                 <div class="company jd">
-                    <span>Company</span>
-                    <span>OpenText Technologies India Ptv Ltd</span>
+                    <span class="jd-h">Company</span>
+                    <span class="jd-d">OpenText Technologies India Ptv Ltd</span>
                 </div>
                 <div class="experince jd">
-                    <span>Experince</span>
-                    <span>3 years 8 months</span>
+                    <span class="jd-h">Experince</span>
+                    <span class="jd-d">3 years 8 months</span>
                 </div>
                 <div class="salary jd">
-                    <span>salary</span>
-                    <span>6 Lakhs</span>
+                    <span class="jd-h">salary</span>
+                    <span class="jd-d">6 Lakhs</span>
                 </div>
             </div>
         </div>

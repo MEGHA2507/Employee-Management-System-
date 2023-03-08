@@ -4,19 +4,81 @@
     flex-direction: row;
     border: 0.5px solid grey;
     border-radius: 15px;
+    margin-bottom: 20px;
+        background-color: lightgoldenrodyellow;
 
+    .profile-photo-img {
+            width: 200px;
+            height: 250px;
+            border: 2px solid lightgrey;
+            border-radius: 10px;
+        }
+    
+        .employee-details {
+            margin-left: 30px;
+            width: 700px;
+        }
     .card-top-actions {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 30px;
+        
+            .employee-name {
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: 600;
+                padding: 10px 10px;
+                background: lightgoldenrodyellow;
+                color: saddlebrown;
+        
+        
+            }
+        
+            .add-btn,
+            .edit-btn {
+                border-radius: 100%;
+                width: 40px;
+                height: 40px;
+                border: 0;
+                margin: 0 10px;
+            }
     }
 
     .details-conatiner {
         display: flex;
         flex-direction: row;
 
-        .personal-details {
-            margin-right: 30px;
+        .details-heading {
+                display: block;
+                font-size: 18px;
+                line-height: 20px;
+                padding-bottom: 10px;
+                border-bottom: 3px solid saddlebrown;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+        
+            .personal-details,
+            .job-details {
+                margin-right: 20px;
+                width: 50%;
+        
+                .pd,
+                .jd {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 10px;
+        
+                    .pd-h,
+                    .jd-h {
+                        margin-right: 20px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        line-height: 18px;
+                    }
+                }
         }
     }
 }
