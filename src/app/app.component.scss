@@ -3,7 +3,7 @@
         display: flex;
         justify-content: space-around;
         padding: 20px;
-        align-items: center;
+        align-items: baseline;
 
 
         .add-employee-btn {
@@ -16,14 +16,12 @@
         .search-employee-panel {
             width: 550px;
 
-            .input-search {
-                padding: 15px 20px;
-                font-size: 14px;
-                line-height: 18px;
-                width: 90%;
-                border-radius: 10px;
-                border: 1px solid lightgray;
-            }
+        // padding: 15px 20px;
+            // font-size: 14px;
+            // line-height: 18px;
+        
+            // border-radius: 10px;
+            // border: 1px solid lightgray;
         }
     }
 }
